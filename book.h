@@ -17,5 +17,5 @@ void printBook(const Book* const book);
 void printHeader();
 
 void swap(Book** head, Book* a, Book* b);
-
+void writeBook(Book* book, FILE* file);
 #endif

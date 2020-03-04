@@ -81,5 +81,16 @@ int main(void) {
 		book = book->next;
 	}
 
+
+	printf("Enter file to write to:\n");
+	scanf("%s", filename);
+
+	FILE* fp = fopen(filename, "w");
+	book = books;
+	while(book != NULL) {
+		writeBook(book, fp);
+		book = book->next;
+	}
+
 	return 0;
 }

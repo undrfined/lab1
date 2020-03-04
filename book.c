@@ -61,6 +61,10 @@ void printBook(const Book* const book) {
 	printf("| %40s | %15s | %4d | %5d | %6.2f |\n", book->name, book->author, book->year, book->pageCount, book->price);
 }
 
+void writeBook(Book* book, FILE* file) {
+	fprintf(file, "%s,%s,%d,%d,%f\n", book->author, book->name, book->year, book->pageCount, book->price);
+}
+
 void swap(Book **head_ref, Book* x, Book* y)
 {
 	if (x == y) return;
