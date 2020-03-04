@@ -3,19 +3,32 @@
 #include <string.h>
 #include "book.h"
 
-#define DATA_FILE_NAME "data.txt"
 
 int main(void) {
+	printf("Enter file to read from:\n");
+	char filename[255];
+	scanf("%s", filename);
 	Book* books;
-	size_t booksCount = openBookFile(DATA_FILE_NAME, &books);
+	size_t booksCount = openBookFile(filename, &books);
 	int i = 0;
 	char* symbols = "pkl";
 	Book* bookPrev = NULL;
 	Book* book = books;
-	printf("All books:\n");
+	double total = 0.0;
+
+	while(book != NULL) {
+		total += book->price;
+		book = book->next;
+	}
+
+	double avg = total / (double)booksCount;
+	book = books;
+	printf("Books with cost over %lf:\n", avg);
 	printHeader();
 	while(book != NULL) {
-		printBook(book);
+		if(book->price > avg) {
+			printBook(book);
+		}
 		book = book->next;
 	}
 
