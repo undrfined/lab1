@@ -1,7 +1,7 @@
-J. K. Rowling,Harry Potter and the Philosopher's Stone,1997,223,47.47
-J. K. Rowling,Harry Potter and the Chamber of Secrets,1998,334,13.37
-Stephen Prata, C Primer Plus,2013,1008,123.456
-Stephen Prata,Primer Minus,2013,1008,123.456
-Stephen Prata,KKK,2013,1008,123.456
-Joseph Albahari,C# 7.0 in a Nutshell,2017,1150,310.44
-Stephen Prata,LLL,2013,1008,123.456
+Stephen Prata,C Primer Plus,2013,1008,123.456000
+Joseph Albahari,C# 7.0 in a Nutshell,2017,1150,310.440000
+J. K. Rowling,Harry Potter and the Chamber of Secrets,1998,334,13.370000
+J. K. Rowling,Harry Potter and the Philosopher's Stone,1997,223,47.470000
+Stephen Prata,KKK,2013,1008,123.456000
+Stephen Prata,LLL,2013,1008,123.456000
+Stephen Prata,Primer Minus,2013,1008,123.456000
